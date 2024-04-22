@@ -27,7 +27,9 @@ h1{
 
 h2 {
     color: #0000FF;
-    background-color: var(--h2-bg-color);}
+    background-color: darkgray;
+    background-color: var(--h2-bg-color);
+}
 
 h3 {
     color: hsl(21, 53%, 49%);
@@ -115,6 +117,8 @@ section img {
     width: 18%;
     max-height: 300px;
     max-width: 400px;
+    min-width: none;
+    min-height: auto;
 }
 
 .notes{
