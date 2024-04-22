@@ -35,11 +35,11 @@ h3 {
 }
 
 p{
-    color: color-mix(lch, rgb(18, 16, 18), rgb(141, 37, 54));
+    color: color-mix(rgb, #ff0000, #0000ff);
 }
 
 li{
-    color: color(rgb(21, 63, 86) srgb r g b / 0.6);
+    color: color(from #0000FF xyz calc(x + 0.75) y calc(z - 0.35));
 }
 
 nav{
@@ -93,7 +93,7 @@ section h2 {
 
 section {
     text-align: left;
-    height: 420px;
+    height: auto;
     width: 100vw; /* Set width to full viewport width */
 }
   
@@ -151,4 +151,62 @@ section img {
       padding-right: 0px;
       width: 25%;
     }
+}
+
+span[class] {
+    color: red;
+}
+
+details > p {
+    color: rgb(23, 22, 22);
+    font-weight: 1000;
+}
+
+nav + hr{
+    margin-bottom: 30px;
+}
+
+summary ~ p{
+    font-style: oblique;
+}
+
+b.important, b.super-important {
+    color: goldenrod;
+}
+
+p:has(+ ul){
+    font-weight: bolder;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    & > b{
+        color: tomato;
+    }
+}
+
+video{
+    width: 25%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+audio{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+footer{
+    text-align: center;
+    padding-top: 20px;
+}
+
+form{
+    margin: 0 auto;
+    width: fit-content;
 }
