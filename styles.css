@@ -35,7 +35,7 @@ h3 {
 }
 
 p{
-    color: color-mix(#ff0000, #0000ff);
+    color: color-mix(in lch, rgb(50, 43, 50), pink);
 }
 
 li{
